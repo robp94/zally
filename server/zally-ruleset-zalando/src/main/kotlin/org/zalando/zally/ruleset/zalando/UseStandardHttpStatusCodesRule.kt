@@ -13,7 +13,7 @@ import org.zalando.zally.rule.api.Violation
  * Validate that HTTP methods and statuses align as expected
  */
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "150",
     severity = Severity.MUST,
     title = "Use Standard HTTP Status Codes"

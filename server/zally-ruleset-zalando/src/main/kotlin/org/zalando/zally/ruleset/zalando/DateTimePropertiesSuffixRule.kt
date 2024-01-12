@@ -10,7 +10,7 @@ import org.zalando.zally.rule.api.Severity
 import org.zalando.zally.rule.api.Violation
 
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "235",
     severity = Severity.SHOULD,
     title = "Name date/time properties using the \"_at\" suffix"

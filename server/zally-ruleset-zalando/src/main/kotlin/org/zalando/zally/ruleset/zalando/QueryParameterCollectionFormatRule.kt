@@ -9,7 +9,7 @@ import org.zalando.zally.rule.api.Severity
 import org.zalando.zally.rule.api.Violation
 
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "154",
     severity = Severity.SHOULD,
     title = "Use and Specify Explicitly the Form-Style Query Format for Collection Parameters"

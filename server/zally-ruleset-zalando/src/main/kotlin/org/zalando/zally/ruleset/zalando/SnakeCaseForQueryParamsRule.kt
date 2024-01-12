@@ -12,7 +12,7 @@ import org.zalando.zally.rule.api.Violation
  * Lint for snake case for query params
  */
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "130",
     severity = Severity.MUST,
     title = "Use snake_case (never camelCase) for Query Parameters"

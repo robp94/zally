@@ -15,7 +15,7 @@ import org.zalando.zally.rule.api.Violation
 import org.zalando.zally.ruleset.zalando.util.WordUtil.isPlural
 
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "134",
     severity = Severity.MUST,
     title = "Pluralize Resource Names"

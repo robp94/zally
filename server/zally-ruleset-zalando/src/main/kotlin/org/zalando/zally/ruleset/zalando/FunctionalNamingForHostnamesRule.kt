@@ -12,7 +12,7 @@ import org.zalando.zally.ruleset.zalando.model.UnsupportedAudienceException
 import org.zalando.zally.ruleset.zalando.model.apiAudience
 
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "224",
     severity = Severity.MUST,
     title = "Follow Naming Convention for Hostnames"

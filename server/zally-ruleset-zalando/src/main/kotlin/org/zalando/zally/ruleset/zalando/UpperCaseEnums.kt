@@ -13,7 +13,7 @@ import org.zalando.zally.rule.api.Severity
 import org.zalando.zally.rule.api.Violation
 
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "240",
     severity = Severity.SHOULD,
     title = "Declare enum values using UPPER_SNAKE_CASE format"

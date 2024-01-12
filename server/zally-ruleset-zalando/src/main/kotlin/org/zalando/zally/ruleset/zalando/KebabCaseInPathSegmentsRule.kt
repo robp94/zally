@@ -9,7 +9,7 @@ import org.zalando.zally.rule.api.Severity
 import org.zalando.zally.rule.api.Violation
 
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "129",
     severity = Severity.MUST,
     title = "Lowercase words with hyphens"

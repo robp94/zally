@@ -9,7 +9,7 @@ import org.zalando.zally.rule.api.Severity
 import org.zalando.zally.rule.api.Violation
 
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "146",
     severity = Severity.SHOULD,
     title = "Limit number of resource types"

@@ -9,7 +9,7 @@ import org.zalando.zally.rule.api.Severity
 import org.zalando.zally.rule.api.Violation
 
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "118",
     severity = Severity.MUST,
     title = "Property Names Must be ASCII snake_case"

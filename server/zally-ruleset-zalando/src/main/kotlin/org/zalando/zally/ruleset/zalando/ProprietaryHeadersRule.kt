@@ -10,7 +10,7 @@ import org.zalando.zally.rule.api.Severity
 import org.zalando.zally.rule.api.Violation
 
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "183",
     severity = Severity.SHOULD,
     title = "Use Only the Specified Proprietary Zalando Headers"

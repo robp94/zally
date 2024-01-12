@@ -17,7 +17,7 @@ import org.zalando.zally.rule.api.Severity
 import org.zalando.zally.rule.api.Violation
 
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "105",
     severity = Severity.MUST,
     title = "Secure All Endpoints With Scopes"

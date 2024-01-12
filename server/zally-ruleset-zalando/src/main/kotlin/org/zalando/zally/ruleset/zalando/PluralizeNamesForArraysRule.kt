@@ -9,7 +9,7 @@ import org.zalando.zally.rule.api.Violation
 import org.zalando.zally.ruleset.zalando.util.WordUtil.isPlural
 
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "120",
     severity = Severity.SHOULD,
     title = "Array names should be pluralized"

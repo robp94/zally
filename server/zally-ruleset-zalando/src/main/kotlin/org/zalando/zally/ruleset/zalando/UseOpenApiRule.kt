@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.node.ObjectNode
 import com.typesafe.config.Config
 import org.slf4j.LoggerFactory
-import org.zalando.zally.core.EMPTY_JSON_POINTER
 import org.zalando.zally.core.JsonSchemaValidator
 import org.zalando.zally.core.ObjectTreeReader
 import org.zalando.zally.rule.api.Check
@@ -17,7 +16,7 @@ import org.zalando.zally.ruleset.zalando.UseOpenApiRule.OpenApiVersion.SWAGGER
 import java.net.URL
 
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "101",
     severity = Severity.MUST,
     title = "Provide API Specification using OpenAPI"
@@ -58,7 +57,9 @@ class UseOpenApiRule(rulesConfig: Config) {
         // -> JSON must start with '{' and end with '}'
         val cleanedUpSource = context.source.trim()
         return if (cleanedUpSource.startsWith("{") && cleanedUpSource.endsWith("}")) {
-            context.violation("must use YAML format", EMPTY_JSON_POINTER)
+            // context.violation("must use YAML format", EMPTY_JSON_POINTER)
+            // we allow yaml or json
+            null
         } else {
             null
         }

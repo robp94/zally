@@ -16,7 +16,7 @@ import org.zalando.zally.rule.api.Violation
  * @see "https://opensource.zalando.com/restful-api-guidelines/#172"
  */
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "172",
     severity = Severity.SHOULD,
     title = "Prefer standard media type names"

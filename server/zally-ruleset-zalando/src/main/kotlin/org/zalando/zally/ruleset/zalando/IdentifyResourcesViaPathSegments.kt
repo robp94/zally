@@ -11,7 +11,7 @@ import org.zalando.zally.rule.api.Severity
 import org.zalando.zally.rule.api.Violation
 
 @Rule(
-    ruleSet = ZalandoRuleSet::class,
+    ruleSet = MxRuleSet::class,
     id = "143",
     severity = Severity.MUST,
     title = "Resources must be identified via path segments"
